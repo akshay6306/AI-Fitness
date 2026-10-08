@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 7 10 18;
+  --foreground: 248 250 252;
+}
+
+body {
+  color: rgb(var(--foreground));
+  background-color: #070A12;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Motivational Glassmorphism Cards */
+.glass-card {
+  background: rgba(15, 22, 38, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+  background: rgba(23, 35, 59, 0.9);
+  border-color: rgba(255, 51, 102, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px -10px rgba(255, 51, 102, 0.25);
+}
+
+/* Metallic & Flame Neon Glow Effects */
+.glow-flame {
+  box-shadow: 0 0 25px rgba(255, 51, 102, 0.3);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.25);
+}
+
+.glow-gold {
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.3);
+}
+
+/* Motivational Banner Overlay */
+.motivational-hero {
+  background-image: linear-gradient(180deg, rgba(7, 10, 18, 0.6) 0%, rgba(7, 10, 18, 0.95) 100%), url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1200&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.gym-card-bg-1 {
+  background-image: linear-gradient(180deg, rgba(15, 22, 38, 0.4) 0%, rgba(15, 22, 38, 0.92) 100%), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.gym-card-bg-2 {
+  background-image: linear-gradient(180deg, rgba(15, 22, 38, 0.4) 0%, rgba(15, 22, 38, 0.92) 100%), url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.gym-card-bg-3 {
+  background-image: linear-gradient(180deg, rgba(15, 22, 38, 0.4) 0%, rgba(15, 22, 38, 0.92) 100%), url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=800&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.gym-card-bg-4 {
+  background-image: linear-gradient(180deg, rgba(15, 22, 38, 0.4) 0%, rgba(15, 22, 38, 0.92) 100%), url('https://images.unsplash.com/photo-1517836833256-52c6f13010b9?q=80&w=800&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070A12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff3366;
+}
