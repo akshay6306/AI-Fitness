@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && npx gh-pages -d out -b gh-pages"
   },
   "dependencies": {
     "next": "14.2.15",
@@ -29,6 +30,7 @@
     "tailwindcss": "^3.4.14",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.1",
-    "eslint-config-next": "14.2.15"
+    "eslint-config-next": "14.2.15",
+    "gh-pages": "^6.2.0"
   }
 }
